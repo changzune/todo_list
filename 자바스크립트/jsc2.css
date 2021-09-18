@@ -1,0 +1,11 @@
+.alert-box {
+    background: rgb(90, 90, 228);
+    color: blue;
+    padding:  20PX;
+    border-radius: 5px;
+    display: none;
+    /* 숨길수 있다.? */
+
+
+
+}
