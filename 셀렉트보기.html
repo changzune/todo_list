@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+$(function(){
+	$("#x_select").change(function() {
+			$(".v_none").css("display","none");
+			$("#table"+$(this).val()+":not(:animated)").fadeIn("slow");
+	});
+});
+</script>
+<style>
+.content_wrap {max-width: 400px;margin: 0 auto}
+.v_none {display: none;margin: 20px auto;border: 1px solid;padding: 20px}
+#x_select {-webkit-appearance: none;-moz-appearance: none;appearance: none;border: solid 1px #cbcbcb;border-radius: 3px;padding: 0 40px 0 10px;background: url(http://temp20.zsol.co.kr/all_img/ico_select.png) right center no-repeat #fff;height: 41px;width: 100%}
+</style>
+<div class="content_wrap">
+	<select id="x_select">
+		<option value="1" selected>첫 번째 셀렉트 박스</option>
+		<option value="2">두 번째 셀렉트 박스</option>
+		<option value="3">세 번째 셀렉트 박스</option>
+		<option value="4">네 번째 셀렉트 박스</option>
+		<option value="5">다섯 번째 셀렉트 박스</option>
+		<option value="6">여섯 번째 셀렉트 박스</option>
+		<option value="7">일곱 번째 셀렉트 박스</option>
+	</select>
+	<div id="table1" class="v_none" style="display:block">첫 번째 셀렉트 박스 내용이 들어갑니다.</div>
+	<div id="table2" class="v_none">두 번째 셀렉트 박스 내용이 들어갑니다.</div>
+	<div id="table3" class="v_none">세 번째 셀렉트 박스 내용이 들어갑니다.</div>
+	<div id="table4" class="v_none">네 번째 셀렉트 박스 내용이 들어갑니다.</div>
+	<div id="table5" class="v_none">다섯 번째 셀렉트 박스 내용이 들어갑니다.</div>
+	<div id="table6" class="v_none">여섯 번째 셀렉트 박스 내용이 들어갑니다.</div>
+	<div id="table7" class="v_none">일곱 번째 셀렉트 박스 내용이 들어갑니다.</div>
+</div> 
+    
+</body>
+</html>
